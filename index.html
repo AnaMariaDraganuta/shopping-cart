@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cos de Cumparaturi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cos de Cumparaturi</h1>
+    
+    <form id="productForm">
+        <input type="text" id="productName" placeholder="Numele produsului" required>
+        <input type="number" id="productQuantity" placeholder="Cantitate" min="1" required>
+        <button type="submit">Adauga Produs</button>
+    </form>
+
+    <h2>Produse in Cos</h2>
+    <ul id="cartList"></ul>
+
+    <form id="productTemplate">
+        <li>
+            <span class="product-name"></span> 
+            <span class="product-quantity"></span>
+            <button class="update-btn">Modifica</button>
+            <button class="remove-btn">Sterge</button>
+        </li>
+    </form>
+
+</body>
+</html>
