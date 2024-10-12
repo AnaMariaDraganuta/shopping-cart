@@ -21,7 +21,7 @@ function updateCart() {
 
     cart.forEach((product, index) => {
         const li = document.createElement('li');
-        li.textContent = `${product.name} - ${product.quantity}`;
+        li.textContent = `${product.name} - ${product.quantity} buc`;
 
         const updateBtn = document.createElement('button');
         updateBtn.textContent = 'Modifica';
